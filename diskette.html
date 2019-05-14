@@ -1,0 +1,166 @@
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Diskette</title>
+<style>
+
+.container{
+  margin:auto;
+  display:flex;
+  width:550px;
+  height:600px;
+  background-color: #fff;
+}
+.frame{
+  margin-top:1%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:column;
+  order:1;
+  width:100%;
+  height:98%;
+  background:linear-gradient(to left, rgba(0,0,0,1) 80.00%, rgba(10,10,10,.9) );
+  box-shadow:10px 10px 10px 10px linear-gradient(to left, rgba(0,0,0,1) 80.00%, rgba(10,10,10,.9) );;
+}
+.frame-left{
+  order:0;
+  width:10%;
+  margin-top:0.5%;
+  height:98.8%;
+  border-radius: 10px 5px 5px 8px;
+  background:linear-gradient(to right, rgba(0,0,0,1) 80.00%, rgba(10,10,10,.9) );
+
+}
+.frame-right{
+  order:2;
+background:linear-gradient(to left, rgba(0,0,0,1) 80.00%, rgba(10,10,10,.9) );
+  margin-top:0.5%;
+  height:98.8%;
+  width:10%;
+  border-radius: 5px 50px 8px 5px;
+  box-shadow:0px 0px 0px 0px;
+}
+.magnetic{
+  background-color: rgb(10,10,10);
+  margin-right:10%;
+  width:85%;
+  height:35%;
+  border-radius:0px 0px 10px 10px;
+}
+.back{
+  margin-top:5%;
+  background-color: rgb(10,10,10);
+  width:30%;
+  height:85%;
+  border-radius:10px 10px 10px 10px;
+}
+.metal{
+  display:flex;
+  background: linear-gradient(217deg, rgba(100,100,100,.8) 50.00%, rgba(150,150,150,.2) );
+  width:70%;
+  height:100%;
+  margin-bottom:5px;
+  border-radius:0px 0px 15px 10px;
+  margin-left:25%;
+  box-shadow:5px 5px 10px;
+}
+.char{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  width:50%;
+  margin-bottom:5%;
+}
+h2{
+  font-size:20px;
+  margin:0px 5% 0px 5px;
+  padding-left:15px;
+}
+h4{
+  font-size:15px;
+  margin:0px 5% 0px 5px;
+  padding-left:15px;
+}
+.canvas{
+  padding:0px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin:0px;
+  list-style:none;
+  list-style-position:center;
+  background-color: transparent;
+  height:60%;
+}
+.write{
+  margin-top:15px;
+  padding-left:5px;
+  padding-right:5px;
+  background-color: red;
+  height:2px;
+  line-height:10px;
+}
+.name{
+  background-color: red;
+  height:40%;
+  border-radius:0px 0px 25px 25px;
+}
+.paper{
+  background-color: rgb(200,200,200);
+  width:80%;
+  height:50%;
+  margin-bottom:5%;
+  border-radius:25px;
+}
+
+@-webkit-keyframes{
+
+}
+
+@keyframes{
+
+}
+    </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="container">
+<div class="frame">
+<div class="magnetic">
+<div class="metal">
+<div class="char">
+<h2>High-Density</h2>
+<h4>Formatted</h4>
+<h4>1.44MB</h4>
+</div>
+<div class="back">
+</div>
+</div>
+</div>
+<div class="paper">
+<ul class="canvas">
+<li class="write"></li>
+<li class="write"></li>
+<li class="write"></li>
+<li class="write"></li>
+<li class="write"></li>
+</ul>
+<div class="name"></div>
+</div>
+</div>
+<div class="frame-left"></div>
+<div class="frame-right"></div>
+</div>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+
+
+</body>
